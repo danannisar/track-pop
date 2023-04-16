@@ -45,11 +45,24 @@ These are the source links of Spotify and Korean music Data :
 - [Kpop Database](https://dbkpop.com/) (The data have been scraped, the scraping code can be seen in `scrape_data.ipynb`)
 
 ## Metode
+Linear regression is used to model the relationship between a dependent variable and one or more independent variables. Regularization is a technique used to prevent overfitting in linear regression models. The regularization method adds a penalty term to the loss function, which helps reduce the coefficients of independent variables irrelevant to the model.
 
+Two types of regularization will be applied in this analysis, Ridge and Lasso. Ridge regression is a type of regularization technique that adds a penalty term proportional to the square of the coefficient magnitude. The term penalty helps reduce the impact of independent variables that are not important to the model. Lasso regression is the other type of regularization technique that adds a penalty term proportional to the absolute value of the coefficient magnitude. Lasso regression not only helps reduce the impact of irrelevant independent variables but also performs feature selection by setting unimportant variable coefficients to zero. Ridge and Lasso regression can be used to prevent overfitting in linear regression models.
+
+Ensemble models are techniques that combine multiple models to improve the performance of machine learning algorithms. Decision tree is a type of model that makes decision based on a set of rules that divide data into subsets. Decision tree can be used as model ensemble in two ways, with bagging or boosting.
+
+Bagging (Bootstrap Aggregating) is an ensemble method that generating multiple decision tree models using random subsets of training data. The final prediction is the average of the predictions made by all models. Random Forest is another ensemble method that uses bagging and decision trees. This involves creating multiple decision tree models using random subsets of training data and randomly selected features. The final prediction is the average of the predictions made by all models. Random Forest is preferred over Bagging when dealing with noisy data.
+
+Model ensemble methods such as Bagging and Random Forest (which used Decision Tree), can be used to improve the performance of machine learning models, by combining multiple models together, which makes them less vulnerable to overfitting and increasing their predictive power.
 
 ## Result
-The first model to be applied is basic Linear Model, due to EDA results in correlation matrix, there is assumption about linear relations between dependent and independent variables. 
+The first model to be applied is basic Linear Model, due to EDA results in correlation matrix, there is assumption about linear relations between dependent and independent variables. The basic linear model and with regularization produces MSE that is not much different in training and cross validation set.
 
+![Summary LM](images/summary_lm.png)
+
+Meanwhile, decision tree model and ensemble model (Bagging Trees and Random Forest) has a significantly smaller MSE.
+
+![Summary LM](images/summary_ensemble.png)
 
 ## Conclussion/Future Work
 
