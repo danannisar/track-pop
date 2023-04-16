@@ -1,4 +1,4 @@
-# Predicting Spotify Track's Popularity from Korean Music Groups <br>based on the Music Features and Group Profiles
+# Predicting Spotify Track's Popularity from Korean Music Groups based on the Music Features and Group Profiles
 
 ## Introduction
 
