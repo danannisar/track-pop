@@ -1,0 +1,8 @@
+bin/
+include/
+lib/
+lib64/
+lib64/python3.9/
+pyvenv.cfg
+share/
+data/raw/
