@@ -64,6 +64,8 @@ Meanwhile, decision tree model and ensemble model (Bagging Trees and Random Fore
 
 ![Summary LM](images/summary_ensemble.png)
 
+From MSE data above, we
+
 ## Conclussion/Future Work
 
 
