@@ -62,9 +62,11 @@ The first model to be applied is basic Linear Model, due to EDA results in corre
 
 Meanwhile, decision tree model and ensemble model (Bagging Trees and Random Forest) has a significantly smaller MSE.
 
-![Summary LM](images/summary_ensemble.png)
+![Summary Ensemble](images/summary_ensemble.png)
 
-From MSE data above, we
+From MSE data above, can be concluded the best regression model is Random Forest with MSE in test set is 106.075, much smaller than the baseline MSE, which is 247.18. Here is the plot comparing real popularity and predicted popularity
+
+![Plot true and predicted](images/plot1.png)
 
 ## Conclussion/Future Work
 
