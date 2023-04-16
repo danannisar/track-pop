@@ -15,18 +15,42 @@ This analysis predict Spotify tracks popularity by applying Linear Model (with R
 
 ## Dataset and Features
 
-This analysis is using two separate datasets, spotify data set and korean music groups dataset. After merging and preparation, the final data has 
+This analysis is using two separate datasets, spotify data set and korean music groups dataset. After merging and preparation, the final data has 2043 rows then separated into 80% training data and 20% test date. Training data would process into cross validation steps when training the model. The pre processing data consists of handling missing value, because there are many missing values in two numeric columns (more than 30%) and it's quite important columns, those columns were grouped into categorical forms. Another preprocessing is converting categorical columns into numerical by Label Encoder and Hot Encoder method.
+
+The features used in this analysis are:
+- `tracks_popularity`: popularity of track in range 0-100 
+- `artist_popularity`: popularity of artist in range 0-100 
+- `duration_ms`: duration of the song (milisecond)
+- `explicit`: whether it contains explicit content or not
+- `danceability`: how danceable a song is in range 0-1
+- `energy`: how energized a song is in range 0-1
+- `time_signature`: major note of track [0:C, 1:C#, 2:D, ...] using Pitch Class notation
+- `loudness`: how loud a song is in db
+- `mode`: the modality of track (0: minor, 1: major)
+- `speechiness`: the presence of spoken words in track range 0-1
+- `acousticness`: how acoustic a track is in range 0-1
+- `instrumentalness`: the absence of vocal sounds in track in range 0-1
+- `liveness`: the presence of audience in track in range 0-1
+- `the valence`: positiveness of the track in range 0-1 (high valence means the track sounds more positive, happy, cheerful or euphoric)
+- `tempo`: overal tempo of track in BPM
+- `time_signature`: a sign used in music to indicate meter of composition (mostly 4)
+- `followers`: amount followers the group has in spotify
+- `big5_company`: condition if the group comes from current big entertainment company (SM, JYP, YG, Cube, or HYBE/Big Hit)
+- `active`: condition if the group still active or not
+- `days_after_debut`: how many days the track released after the group's debut
+- `mean_age_released`: average of the member's age when the track was released
 
 These are the source links of Spotify and Korean music Data :
 - [Spotify Dataset 1921-2020, 600k+ Tracks](https://www.kaggle.com/datasets/yamaerenay/spotify-dataset-19212020-600k-tracks)
 - [Kpop Database](https://dbkpop.com/) (The data have been scraped, the scraping code can be seen in `scrape_data.ipynb`)
 
-Dataset and Features
+## Metode
 
-Metode
 
-Experiment/Result/Discussion
+## Result
+The first model to be applied is basic Linear Model, due to EDA results in correlation matrix, there is assumption about linear relations between dependent and independent variables. 
 
-Conclussion/Future Work
+
+## Conclussion/Future Work
 
 
