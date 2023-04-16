@@ -67,6 +67,7 @@ Meanwhile, decision tree model and ensemble model (Bagging Trees and Random Fore
 From MSE data above, can be concluded the best regression model is Random Forest with MSE in test set is 106.075, much smaller than the baseline MSE, which is 247.18. Here is the plot comparing real popularity and predicted popularity
 
 ![Plot true and predicted](images/plot1.png)
+![Plot deviation](images/deviation.png)
 
 ## Conclussion/Future Work
 
