@@ -69,6 +69,4 @@ From MSE data above, can be concluded the best regression model is Random Forest
 ![Plot true and predicted](images/plot1.png)
 ![Plot deviation](images/deviation.png)
 
-## Conclussion/Future Work
-
 
